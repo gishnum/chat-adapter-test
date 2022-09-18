@@ -7,7 +7,7 @@
 		<version>2.7.3</version>
 	</parent>
 	
-
+	<modelVersion>4.0.0</modelVersion>
 	<artifactId>chat-parent</artifactId>
 	<groupId>com.code.solvers</groupId>
 	<version>1.0.0</version>
