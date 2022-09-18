@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: rocket-chat
+  mail:
+    default-encoding:
+    host: smtp-mail.outlook.com
+    username: solvers2022@outlook.com
+    password: hack@2022
+    port: 587
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "smtp-mail.outlook.com"
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+  instance:
+    appname: rocket-chat
+
+springdoc:
+  swagger-ui:
+    path: /docs
